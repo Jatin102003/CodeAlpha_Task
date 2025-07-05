@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>✨ Image Gallery</h1>
+            <p>Discover beautiful moments captured in time</p>
+        </div>
+
+        <div class="controls">
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="nature">Nature</button>
+                <button class="filter-btn" data-filter="city">City</button>
+                <button class="filter-btn" data-filter="people">People</button>
+                <button class="filter-btn" data-filter="art">Art</button>
+            </div>
+            
+            <div class="view-toggle">
+                <button class="view-btn active" data-view="grid" title="Grid View">⚏</button>
+                <button class="view-btn" data-view="list" title="List View">☰</button>
+            </div>
+        </div>
+
+        <div class="gallery grid-view" id="gallery">
+            <!-- Images will be dynamically generated -->
+        </div>
+    </div>
+
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightbox-close">×</button>
+            <img id="lightbox-img" src="" alt="">
+            <button class="nav-btn prev" id="prev-btn">‹</button>
+            <button class="nav-btn next" id="next-btn">›</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
